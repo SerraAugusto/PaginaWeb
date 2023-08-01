@@ -23,7 +23,7 @@ background-color: #8f8e8e;
 padding: 2px;
 align-self: center;
 list-style: none;
-height: 100%;
+height: 90%;
 `
 
 

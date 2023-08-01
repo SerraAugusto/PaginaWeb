@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import ProjectBox from './ProjectBox'
+import RepositorieBox from './RepositorieBox'
 
 
 
 
 
-const skillsList = ['CSS', 'JavaScript', 'MySql', 'Postman', 'React', 'Express', 'Sequelize','Next.js', 'StyledComponents', 'Node.js'];
-const skillsCarritoPage = skillsList.slice(0,7) ;
-const skillsMercadoLiebre = skillsList.filter(skill => skill === 'CSS' || skill === 'MySql' || skill === 'Sequelize');
+const skillsList = ['CSS', 'JavaScript', 'MySql', 'Postman', 'React', 'Express', 'Sequelize', 'Next.js', 'StyledComponents', 'Node.js'];
+const skillsCarritoPage = skillsList.slice(0, 6);
+const skillsMercadoLiebre = skillsList.filter(skill => skill === 'React' || skill === 'CSS' || skill === 'JavaScript');
 
 
 const ImageStyle = styled.img`
@@ -39,41 +39,27 @@ flex-direction: row;
  
 `
 
-const RepositorieBox = styled.div`
-display: flex;
-flex-direction: column;
-width: 300px;
-height: 500px;
-background-color: green;
-`
+
 
 
 
 
 export default function Portfolio() {
   return <>
-   
-<Container>
 
-<RepositoriesContainers>
+    <Container>
 
+      <RepositoriesContainers>
 
-<RepositorieBox>
-  <TittleRepositorie>Mercado Liebre</TittleRepositorie>
-  <ImageStyle></ImageStyle>
-<ProjectBox skills={skillsMercadoLiebre}></ProjectBox>
-</RepositorieBox>
-<RepositorieBox>
-<TittleRepositorie>Laca Shopping</TittleRepositorie>
-  <ImageStyle src='\CarritoPage.png'></ImageStyle>
-<ProjectBox skills={skillsCarritoPage}></ProjectBox>
+        <RepositorieBox title="Administrador de Citas"
+          image={'/administradorDeCitas.jpg'} skills={skillsMercadoLiebre} githubUrl={'https://github.com/SerraAugusto/Administrador-de-citas'}></RepositorieBox>
 
-</RepositorieBox>
+        <RepositorieBox title="Laca Cosmeticos"
+          image={'/CarritoPage.png'} skills={skillsCarritoPage} githubUrl={'https://github.com/SerraAugusto/grupo_4_beautyPoint'}></RepositorieBox>
+          
+      </RepositoriesContainers>
 
-</RepositoriesContainers>
+    </Container>
 
-
-</Container>
-
-    </>
+  </>
 }
