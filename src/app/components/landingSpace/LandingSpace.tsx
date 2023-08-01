@@ -69,7 +69,7 @@ export default function LandingSpace() {
 
 <TitleProfile>
 <h1>Augusto Serra</h1>
-<p>Frontend Developer y soporte IT en Microsoft. Con lógica y paciencia podemos hacer grandes cosas 😅</p>
+<p>Full Stack Web Developer, Adaptando constantemente a nuevas tecnologias </p>
 </TitleProfile>
 <SocialMediaContainer>
 

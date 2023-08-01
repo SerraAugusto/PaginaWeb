@@ -57,16 +57,14 @@ export default function Portfolio() {
 
 <RepositoriesContainers>
 
-<RepositorieBox>
-<ProjectBox skills={skillsList}></ProjectBox>
-</RepositorieBox>
+
 <RepositorieBox>
   <TittleRepositorie>Mercado Liebre</TittleRepositorie>
   <ImageStyle></ImageStyle>
 <ProjectBox skills={skillsMercadoLiebre}></ProjectBox>
 </RepositorieBox>
 <RepositorieBox>
-<TittleRepositorie>Carrarito Page</TittleRepositorie>
+<TittleRepositorie>Laca Shopping</TittleRepositorie>
   <ImageStyle></ImageStyle>
 <ProjectBox skills={skillsCarritoPage}></ProjectBox>
 </RepositorieBox>
