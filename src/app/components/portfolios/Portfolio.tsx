@@ -7,7 +7,7 @@ import ProjectBox from './ProjectBox'
 
 
 const skillsList = ['CSS', 'JavaScript', 'MySql', 'Postman', 'React', 'Express', 'Sequelize','Next.js', 'StyledComponents', 'Node.js'];
-const skillsCarritoPage = skillsList.slice(0,6) ;
+const skillsCarritoPage = skillsList.slice(0,7) ;
 const skillsMercadoLiebre = skillsList.filter(skill => skill === 'CSS' || skill === 'MySql' || skill === 'Sequelize');
 
 
@@ -65,8 +65,9 @@ export default function Portfolio() {
 </RepositorieBox>
 <RepositorieBox>
 <TittleRepositorie>Laca Shopping</TittleRepositorie>
-  <ImageStyle></ImageStyle>
+  <ImageStyle src='\CarritoPage.png'></ImageStyle>
 <ProjectBox skills={skillsCarritoPage}></ProjectBox>
+
 </RepositorieBox>
 
 </RepositoriesContainers>

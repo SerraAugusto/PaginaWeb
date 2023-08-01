@@ -63,7 +63,7 @@ export default function LandingSpace() {
   
     return  <>
    <Container>
-   <ShadowBorder><ProfileImage src='\fotofachera.jpg'></ProfileImage></ShadowBorder>
+   <ShadowBorder><ProfileImage src='\photo.jpg'></ProfileImage></ShadowBorder>
 
 <AboutAndSocial>
 
