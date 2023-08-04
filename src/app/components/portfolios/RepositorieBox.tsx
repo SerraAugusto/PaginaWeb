@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import InformationSkill from '../aboutMe/InformationSkill';
-
-import { FaInstagram, FaLinkedin, FaGithub, } from 'react-icons/fa';
+import { BiWorld } from "react-icons/bi";
+import { FaInstagram, FaLinkedin, FaGithub,  } from 'react-icons/fa';
 
 
 const Container = styled.div`
@@ -36,11 +36,12 @@ const ImageStyle = styled.img`
 `;
 
 
-const GitIcon = styled.a`
+const IconStyle = styled.a`
 
 margin: 10px;
-  font-size: 30px;
-  align-self: center;
+  
+font-size: 30px;
+  
   transition:  0.2s ;
 
   &:hover {
@@ -48,15 +49,21 @@ margin: 10px;
   }
 `;
 
+const UrlsIconStyle = styled.div`
+display: flex;
+align-self: center;
+`
+
 interface Props {
 
   skills: string[];
   title?: string;
   image?: string;
   githubUrl?: string;
+  repoUrl?: string;
 
 }
-export default function RepositorieBox({ title, image, skills, githubUrl }: Props) {
+export default function RepositorieBox({ title, image, skills, githubUrl, repoUrl }: Props) {
   return <>
 
 
@@ -75,12 +82,21 @@ export default function RepositorieBox({ title, image, skills, githubUrl }: Prop
       </SkillsContainer>
       
       </div>
+      <UrlsIconStyle>
       {githubUrl && (
 
-         <GitIcon href={githubUrl} target="_blank"> <FaGithub></FaGithub></GitIcon>
+         <IconStyle href={githubUrl} target="_blank"> <FaGithub></FaGithub></IconStyle>
 
-      )}
+      
+         )}
 
+         {repoUrl && (
+
+<IconStyle href={repoUrl} target="_blank"> <BiWorld></BiWorld></IconStyle>
+
+
+)}
+</UrlsIconStyle>
 
     </Container>
 

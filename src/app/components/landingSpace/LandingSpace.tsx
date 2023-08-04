@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion";
-import { FaInstagram,FaLinkedin, FaGithub, } from 'react-icons/fa';
+import { FaInstagram,FaLinkedin, FaGithub } from 'react-icons/fa';
+import { BiLogoGmail } from "react-icons/bi";
 
 
 
@@ -53,10 +54,27 @@ font-size: 30px;
 const TitleProfile = styled.div`
 h1{
   margin-bottom: 30px;
+  font-size: 40px;
 }
-
+p{
+  font-size: 20px;
+}
+display: flex;
+flex-direction: column;
+align-items: center;
 `
- 
+const GmailIconStyle = styled.div`
+font-size: 30px;
+`
+const GmailContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-top: 20px;
+`
+
 
 
 export default function LandingSpace() {
@@ -69,15 +87,18 @@ export default function LandingSpace() {
 
 <TitleProfile>
 <h1>Augusto Serra</h1>
-<p>Frontend Developer y soporte IT en Microsoft. Con lógica y paciencia podemos hacer grandes cosas 😅</p>
+<p>Frontend Developer. Buscando mejorar constantemente para brindar el mejor servicio</p>
 </TitleProfile>
 <SocialMediaContainer>
 
-<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://example.com"><FaGithub /></a></motion.div>
-<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://example.com"><FaLinkedin /></a></motion.div>
-<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://example.com"><FaInstagram /></a></motion.div>
+<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://github.com/SerraAugusto/" target="_blank"><FaGithub /></a></motion.div>
+<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://www.linkedin.com/in/augusto-serra-61604b206/" target="_blank"><FaLinkedin /></a></motion.div>
+
+
+
 
 </SocialMediaContainer>
+<GmailContainer><GmailIconStyle><BiLogoGmail></BiLogoGmail> </GmailIconStyle><p>Augusto.Serra.Luis@gmail.com</p></GmailContainer>
 </AboutAndSocial>
     </Container>            
     </>

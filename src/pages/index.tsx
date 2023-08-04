@@ -41,7 +41,7 @@ export default function index() {
   <Title>Portfolio</Title>
       <SpaceBar></SpaceBar>
 <Portfolios></Portfolios>
-    
+
   </>
     
   )

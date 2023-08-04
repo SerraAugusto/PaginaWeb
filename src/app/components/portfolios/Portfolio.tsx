@@ -6,8 +6,8 @@ import RepositorieBox from './RepositorieBox'
 
 
 
-const skillsList = ['CSS', 'JavaScript', 'MySql', 'Postman', 'React', 'Express', 'Sequelize', 'Next.js', 'StyledComponents', 'Node.js'];
-const skillsCarritoPage = skillsList.slice(0, 6);
+const skillsList = ['CSS', 'JavaScript', 'MySql', 'Postman', 'React', 'Express', 'Sequelize', 'Node.js', 'Next.js', 'StyledComponents' ];
+const skillsCarritoPage = skillsList.slice(0, 7);
 const skillsMercadoLiebre = skillsList.filter(skill => skill === 'React' || skill === 'CSS' || skill === 'JavaScript');
 
 
@@ -52,10 +52,10 @@ export default function Portfolio() {
       <RepositoriesContainers>
 
         <RepositorieBox title="Administrador de Citas"
-          image={'/administradorDeCitas.jpg'} skills={skillsMercadoLiebre} githubUrl={'https://github.com/SerraAugusto/Administrador-de-citas'}></RepositorieBox>
+          image={'/administradorDeCitas.jpg'} skills={skillsMercadoLiebre} githubUrl={'https://github.com/SerraAugusto/Administrador-de-citas'} repoUrl={'https://64cd2fbe2039343790a4a64a--sweet-manatee-310de1.netlify.app'}></RepositorieBox>
 
         <RepositorieBox title="Laca Cosmeticos"
-          image={'/CarritoPage.png'} skills={skillsCarritoPage} githubUrl={'https://github.com/SerraAugusto/grupo_4_beautyPoint'}></RepositorieBox>
+          image={'/CarritoPage.png'} skills={skillsCarritoPage} githubUrl={'https://github.com/SerraAugusto/grupo_4_beautyPoint'} ></RepositorieBox>
           
       </RepositoriesContainers>
 

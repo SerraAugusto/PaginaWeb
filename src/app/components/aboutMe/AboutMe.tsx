@@ -65,22 +65,44 @@ export default function AboutMe() {
   return <>
     <Container>
 
-      
+
       <AboutMeContainer>
         <EducationContainer>
           <TitleContainer>Educacion</TitleContainer>
-          <InformationItem />
-          <InformationItem />
+          <InformationItem
+            name='Digital House'
+            urlName='https://www.digitalhouse.com/ar'
+            subName='Programador Full Stack'
+            subNameUrl='https://www.digitalhouse.com/ar/productos/programacion/programacion-web-full-stack'
+            date='nov. 2021 - jul. 2022'
+            skills={['React', 'CSS', 'JavaScript', 'Node.js', 'MySQL', 'APIs', 'Postman', 'Express', 'Sequelize']}
+          />
+          <InformationItem
+            name='Udemy'   
+            urlName='https://www.udemy.com/es/'                  
+            subName='React - La Guía Completa: Hooks Context Redux MERN +15 Apps'
+            subNameUrl='https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/?kw=React+-+La+Guía+Completa%3A+Hooks+Context+Redux+MERN+%2B15+Apps&src=sac' 
+            date='mar. 2019 - feb. 2020'
+            skills={['React', 'CSS', 'JavaScript', 'APIs']}
+          />
+
         </EducationContainer>
         <ExperienceContainer>
-        <TitleContainer>Experiencia</TitleContainer>
-          <InformationItem />
-          <InformationItem />
+          <TitleContainer>Experiencia</TitleContainer>
+          <InformationItem
+            name='Freelancer'           
+            subName='Frontend Web Developer'            
+            date='feb. 2021 - ene. 2023'
+            skills={['React', 'CSS', 'JavaScript', 'Node.js', 'MySQL', 'APIs','TypeScript', 'Next.js', 'Styled Components']}
+
+          />
+          
+
         </ExperienceContainer>
       </AboutMeContainer>
-    
-    
-    
+
+
+
     </Container>
   </>
 }
