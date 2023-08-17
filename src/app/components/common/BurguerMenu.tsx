@@ -32,12 +32,13 @@ const Container = styled.div<{ visible: boolean }>`
   position: fixed;
   height: 50vh;
   width: 200px;
-  background-color: red;
+  background-color: white;
   right: -200px;
   z-index: 10000;
   top: 105px;
   transition: transform 0.5s ease;
   transform: ${({ visible }) => (visible ? 'translateX(-100%)' : 'translateX(0)')};
+padding-top: 10px;
 `;
 
 const Link = styled.a`
@@ -84,10 +85,11 @@ const BurguerMenu: React.FC = () => {
       </ButtonContainer>
       <Overlay visible={isContainerVisible} />
       <Container visible={isContainerVisible} ref={containerRef}>
-        <h2>Elementos hipervinculables:</h2>
-        <Link href="#">Enlace 1</Link>
-        <Link href="#">Enlace 2</Link>
-        <Link href="#">Enlace 3</Link>
+       
+        <Link href="#">Sobre mi</Link>
+        <Link href="#">Proyectos</Link>
+        <Link href="#">Habilidades</Link>
+        <Link href="#">Contacto</Link>
       </Container>
     </>
   );

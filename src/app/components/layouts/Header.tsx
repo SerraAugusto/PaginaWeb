@@ -54,6 +54,7 @@ transition: font-size 0.8s;
 export default function Header() {
     
     return <>
+       
         <Container>
         <NameLogo>Augusto</NameLogo>
             <UlListContainer className='hide-Mobile'>
