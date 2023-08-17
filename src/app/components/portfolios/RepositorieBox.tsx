@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types';
 import InformationSkill from '../aboutMe/InformationSkill';
 import { BiWorld } from "react-icons/bi";
-import { FaInstagram, FaLinkedin, FaGithub,  } from 'react-icons/fa';
+import {FaGithub,  } from 'react-icons/fa';
 
 
 const Container = styled.div`
@@ -11,8 +11,18 @@ display: flex;
 flex-direction: column;
 width: 300px;
 height: 500px;
-background-color: green;
+background-color: #edeef0;
 justify-content: space-between;
+border-radius: 8px; 
+transition: 0.3s;
+
+
+:hover{
+box-shadow: 1px 1px 5px #686868;
+
+}
+
+
 `
 
 
@@ -27,12 +37,14 @@ margin-left:10px
 
 const Title = styled.h2`
   text-align: center;
+  padding: 10px;
 `;
 
 const ImageStyle = styled.img`
  
-  width: 300px;
+  width: 100%;
   height: 200px;
+
 `;
 
 
@@ -42,10 +54,14 @@ margin: 10px;
   
 font-size: 30px;
   
-  transition:  0.2s ;
+  transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
+color: #3a3a3a;
+  
 
-  &:hover {
-    transform: scale(1.2);
+&:hover {
+    transform: scale(1.5);
+    
+    
   }
 `;
 

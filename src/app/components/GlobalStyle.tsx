@@ -44,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -77,6 +77,12 @@ const GlobalStyle = createGlobalStyle`
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}  */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -99,11 +105,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
 
 @media (max-width: 768px) {
   .hide-Mobile {
@@ -116,6 +118,7 @@ a {
   }
 }
 `;
+
 
 
 

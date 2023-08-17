@@ -2,33 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import Skill from "./Skill";
 import { FaGithub, FaCss3, FaNodeJs } from "react-icons/fa";
-
 import { SiTypescript, SiJavascript, SiNestjs, SiStyledcomponents, SiReact, SiMysql } from 'react-icons/si';
-import { IconType } from 'react-icons/lib';
+import { MainContainer } from "../common/MainCointainer";
 
 const Container = styled.div`
   padding-top: 30px;
-`;
+  background-color: #F8F9FA;
+  padding-bottom: 30px;
 
+`;
 const Title = styled.article`
   display: flex;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 20px;
   font-size: 2.5rem;
+  padding-top: 20px;
+
 `;
+
 
 const BoxesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 30px;
   @media (max-width: 768px) {
    
    gap: 10px;
  }
  @media (min-width: 769px) {
-   
+   max-width: 1200px;
    gap: 30px;
+margin: auto;
  }
 `;
 
@@ -37,7 +43,11 @@ const BoxesContainer = styled.div`
 export default function Skills() {
   return (
     <>
+
+   
       <Container>
+        <MainContainer>
+      <Title>Skills</Title>
 
 
         <BoxesContainer>
@@ -53,7 +63,9 @@ export default function Skills() {
 
           
         </BoxesContainer>
+        </MainContainer>
       </Container>
+      
     </>
   );
 }

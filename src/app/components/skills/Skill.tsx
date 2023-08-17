@@ -29,7 +29,7 @@ const IconSize = styled.div`
 `;
 const NameIcon = styled.span`
   display: flex;
- 
+
   justify-content: center;
 `;
 

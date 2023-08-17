@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { motion } from "framer-motion";
-import { FaInstagram,FaLinkedin, FaGithub } from 'react-icons/fa';
+
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BiLogoGmail } from "react-icons/bi";
+import ResumeButton from './ResumeButton';
 
 
 
@@ -10,12 +11,13 @@ const Container = styled.section`
   display: flex;
   align-items: center;
 flex-direction: column;
- padding: 20px;
-
+ padding-top: 100px;
+ background-color: white;
+ padding-bottom: 20px;
 
 
 `
-    const ProfileImage = styled.img`
+const ProfileImage = styled.img`
   display: inline-block;
   overflow: hidden;      
   clip-path: circle(40%);
@@ -24,7 +26,7 @@ flex-direction: column;
 
 
     `
-  const ShadowBorder = styled.div`
+const ShadowBorder = styled.div`
     display: flex;
   overflow: hidden;      
   clip-path: circle(40%);
@@ -35,7 +37,7 @@ justify-content: center;
   `
 
 
-    const AboutAndSocial = styled.div`
+const AboutAndSocial = styled.div`
 display: flex;
 flex-direction: column;
 flex: 1.5;
@@ -75,33 +77,48 @@ gap: 10px;
 margin-top: 20px;
 `
 
+const IconStyle = styled.a`
+
+margin: 10px;
+  
+font-size: 30px;
+
+  transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
+
+  &:hover {
+    transform: scale(1.5);
+    
+  }
+`;
+
 
 
 export default function LandingSpace() {
-  
-    return  <>
-   <Container>
-   <ShadowBorder><ProfileImage src='\fotofachera.jpg'></ProfileImage></ShadowBorder>
+
+  return <>
+    <Container >
+    <ShadowBorder><ProfileImage src='\fotoprofile.jpg'></ProfileImage></ShadowBorder>
 
 <AboutAndSocial>
 
-<TitleProfile>
-<h1>Augusto Serra</h1>
-<p>Frontend Developer. Buscando mejorar constantemente para brindar el mejor servicio</p>
-</TitleProfile>
-<SocialMediaContainer>
+  <TitleProfile>
+    <h1>Augusto Serra</h1>
+    <p>Frontend Developer. Buscando mejorar constantemente para brindar el mejor servicio</p>
+  </TitleProfile>
+  <SocialMediaContainer>
 
-<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://github.com/SerraAugusto/" target="_blank"><FaGithub /></a></motion.div>
-<motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.8 }}><a href="https://www.linkedin.com/in/augusto-serra-61604b206/" target="_blank"><FaLinkedin /></a></motion.div>
+    <IconStyle href="https://github.com/SerraAugusto/" target="_blank"><FaGithub/></IconStyle>
+    <IconStyle href="https://www.linkedin.com/in/augusto-serra-61604b206/" target="_blank"><FaLinkedin/></IconStyle>
+ 
 
 
 
-
-</SocialMediaContainer>
-<GmailContainer><GmailIconStyle><BiLogoGmail></BiLogoGmail> </GmailIconStyle><p>Augusto.Serra.Luis@gmail.com</p></GmailContainer>
+  </SocialMediaContainer>
+  <GmailContainer><GmailIconStyle><BiLogoGmail></BiLogoGmail></GmailIconStyle><p>Augusto.Serra.Luis@gmail.com</p></GmailContainer>
+<ResumeButton filename='\Augusto-Serra-CV-esp.pdf' buttonText='Descargar C.V.' ></ResumeButton>
 </AboutAndSocial>
-    </Container>            
-    </>
-    
+    </Container>
+  </>
+
 }
 

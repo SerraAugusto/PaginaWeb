@@ -10,7 +10,7 @@ padding: 10px;
 
 const SkillContainer = styled.div <{size: Size}>`
 height: ${({size}) => size === "medium" ? "40px" : "30px"};
-width: min-content;
+width: fit-content;
 display: flex;
 background-color: violet;
 align-items: center;

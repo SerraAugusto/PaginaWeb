@@ -10,7 +10,7 @@ const SkillsContainer = styled.div`
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  width: 70%;
+
 `;
 
 const InfoContainer = styled.div`
@@ -21,9 +21,10 @@ const InfoContainer = styled.div`
   margin-bottom: 40px;
 `;
 
-const ItemInformation = styled.div`
+const Container = styled.div`
   display: flex;
   height: 100%;
+
 `;
 
 interface Props {
@@ -45,7 +46,7 @@ export default function InformationItem({
 
 }: Props) {
   return (
-    <ItemInformation>
+    <Container>
     <DotAndLineBar />
     <InfoContainer>
       {urlName && name && <a href={urlName} target="_blank"><h1>{name}</h1></a>}
@@ -59,6 +60,6 @@ export default function InformationItem({
         ))}
       </SkillsContainer>
     </InfoContainer>
-  </ItemInformation>
+  </Container>
 );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components'
 import BurguerMenu from '../common/BurguerMenu';
 import { motion } from "framer-motion";
@@ -9,11 +9,14 @@ import { motion } from "framer-motion";
 
 
 
-const NavContainer = styled.nav`
+const  Container = styled.nav`
 display: flex;
 align-items: center;
 height: 100px;
-
+background-color: #F8F9FA;
+position: fixed;
+width: 100%;
+z-index: 1;
 `
 const UlListContainer = styled.ul`
  list-style-type: none;
@@ -51,18 +54,18 @@ transition: font-size 0.8s;
 export default function Header() {
     
     return <>
-        <NavContainer>
-            <NameLogo>Augusto</NameLogo>
+        <Container>
+        <NameLogo>Augusto</NameLogo>
             <UlListContainer className='hide-Mobile'>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Sobre mi</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>   <li><a href="#">Proyectos</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>  <li><a href="#">Habilidades</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>   <li><a href="#">Contacto</a></li></motion.div> 
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Proyectos</a></li></motion.div> 
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Habilidades</a></li></motion.div> 
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Contacto</a></li></motion.div> 
             </UlListContainer>
            
            <BurguerMenu ></BurguerMenu>
            
-        </NavContainer>
+        </Container>
 
 
 
