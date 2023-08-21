@@ -109,12 +109,12 @@ a {
 
 @media (max-width: 768px) {
   .hide-Mobile {
-    display: none;
+   display: none !important ;
   }
 }
 @media (min-width: 769px) {
   .hide-Desktop {
-    display: none;
+    display: none !important;
   }
 }
 `;
