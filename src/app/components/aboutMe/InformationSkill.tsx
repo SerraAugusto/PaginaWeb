@@ -12,7 +12,7 @@ const SkillContainer = styled.div <{size: Size}>`
 height: ${({size}) => size === "medium" ? "40px" : "30px"};
 width: fit-content;
 display: flex;
-background-color: violet;
+background-color: #BBD4DD;
 align-items: center;
 justify-content: center;
 border-radius: 5px;

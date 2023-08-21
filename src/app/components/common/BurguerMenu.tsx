@@ -24,7 +24,7 @@ const Overlay = styled.div<{ visible: boolean }>`
   background-color: rgba(0, 0, 0, 0.5);
   display: ${({ visible }) => (visible ? 'block' : 'none')};
   z-index: 9999;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
   opacity: ${({ visible }) => (visible ? 1 : 0)};
 `;
 
