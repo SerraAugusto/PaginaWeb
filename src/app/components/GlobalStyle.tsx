@@ -109,13 +109,17 @@ a {
 
 @media (max-width: 768px) {
   .hide-Mobile {
-   display: none !important ;
+   display: none  ;
   }
 }
 @media (min-width: 769px) {
   .hide-Desktop {
-    display: none !important;
+    display: none ;
   }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 `;
 

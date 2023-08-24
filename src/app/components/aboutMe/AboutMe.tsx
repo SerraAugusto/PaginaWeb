@@ -2,23 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { MainContainer } from '../common/MainCointainer';
 import InformationItem from './InformationItem';
-
+import { Title } from '../common/Title';
 
 const Container = styled.div`
-padding-top: 40px;
+
 background-color:white;
 
 `
 
-const Title = styled.article`
-  display: flex;
-  justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 20px;
-  font-size: 2.5rem;
-  padding-top: 20px;
 
-`;
 
 const AboutMeContainer = styled.div`
 display: flex;
@@ -67,9 +59,10 @@ padding-bottom: 50px;
 export default function AboutMe() {
   return <>
     
-    <Container >
+    <Container id='about-me'>
+
 <MainContainer>
-    <Title>Sobre Mi</Title>
+<Title>Sobre Mi</Title>
       <AboutMeContainer>
         <EducationContainer>
           <TitleContainer>Educacion</TitleContainer>

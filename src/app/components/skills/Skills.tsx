@@ -4,22 +4,14 @@ import Skill from "./Skill";
 import { FaGithub, FaCss3, FaNodeJs } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiNestjs, SiStyledcomponents, SiReact, SiMysql } from 'react-icons/si';
 import { MainContainer } from "../common/MainCointainer";
-
+import { Title } from "../common/Title";
 const Container = styled.div`
-  padding-top: 30px;
+
   background-color: #F8F9FA;
-  padding-bottom: 30px;
+
 
 `;
-const Title = styled.article`
-  display: flex;
-  justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 20px;
-  font-size: 2.5rem;
-  padding-top: 20px;
 
-`;
 
 
 const BoxesContainer = styled.div`
@@ -45,7 +37,7 @@ export default function Skills() {
     <>
 
    
-      <Container>
+      <Container id="skills">
         <MainContainer>
       <Title>Skills</Title>
 

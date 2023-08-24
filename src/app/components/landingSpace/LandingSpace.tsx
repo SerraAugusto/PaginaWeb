@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { BiLogoGmail } from "react-icons/bi";
 import ResumeButton from './ResumeButton';
+import Image from 'next/image';
 
 
 
@@ -13,17 +13,17 @@ const Container = styled.section`
 flex-direction: column;
  padding-top: 100px;
  background-color: white;
- padding-bottom: 20px;
+
 
 
 `
-const ProfileImage = styled.img`
+const ProfileImage = styled(Image)`
   display: inline-block;
   overflow: hidden;      
   clip-path: circle(40%);
   object-fit: cover;
-  width: 300px;
 
+  
 
     `
 const ShadowBorder = styled.div`
@@ -96,8 +96,8 @@ font-size: 30px;
 export default function LandingSpace() {
 
   return <>
-    <Container >
-    <ShadowBorder><ProfileImage src='\fotoprofile.jpg'></ProfileImage></ShadowBorder>
+    <Container id='Home'>
+    <ShadowBorder><ProfileImage width={300} height={300} src='/fotoprofile.jpg' alt='fotoprofile'></ProfileImage></ShadowBorder>
 
 <AboutAndSocial>
 

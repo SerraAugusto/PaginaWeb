@@ -28,7 +28,7 @@ justify-content: center;
 `
 
 
-const NameLogo = styled.span`
+const NameLogo = styled.a`
 flex: 1;
 @media (min-width: 769px){
 justify-content: flex-end;
@@ -52,16 +52,16 @@ transition: font-size 0.8s;
 
 
 export default function Header() {
-    
+  
     return <>
        
         <Container>
-        <NameLogo>Augusto</NameLogo>
+        <NameLogo href='#Home'>Augusto</NameLogo>
             <UlListContainer className='hide-Mobile'>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Sobre mi</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Proyectos</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Habilidades</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#">Contacto</a></li></motion.div> 
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Habilidades</a></li></motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div> 
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>              
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div> 
             </UlListContainer>
            
            <BurguerMenu ></BurguerMenu>

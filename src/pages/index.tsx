@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
-
 import styled from 'styled-components'
 import Header from '@/app/components/layouts/Header'
-
 import LandingSpace from '@/app/components/landingSpace/LandingSpace'
 import AboutMe from '@/app/components/aboutMe/AboutMe'
 import Skills from '@/app/components/skills/Skills'
 import Portfolios from '@/app/components/portfolios/Portfolio'
+import  ContactMe  from '@/app/components/contactMe/ContactMe';
 
 
 
@@ -28,7 +27,7 @@ export default function index() {
   
       
 <Portfolios></Portfolios>
-
+<ContactMe></ContactMe>
   </>
     
   )

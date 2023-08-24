@@ -12,4 +12,5 @@ export const MainContainer = styled.div`
 
  }
 margin: auto;
+
 `

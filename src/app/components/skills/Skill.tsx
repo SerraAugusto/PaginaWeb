@@ -13,7 +13,7 @@ const BoxContainer = styled.div `
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #e64747;
+    background-color: #77c2db;
   
 
 `;

@@ -84,15 +84,15 @@ const BurguerMenu: React.FC = () => {
         <GiHamburgerMenu />
       </ButtonContainer>
       <Overlay visible={isContainerVisible} />
-      <Container visible={isContainerVisible} ref={containerRef}>
-       
-        <Link href="#">Sobre mi</Link>
-        <Link href="#">Proyectos</Link>
-        <Link href="#">Habilidades</Link>
-        <Link href="#">Contacto</Link>
+      <Container visible={isContainerVisible} ref={containerRef}>      
+       <Link href="#skills">Habilidades</Link>
+        <Link href="#about-me">Sobre mi</Link>
+        <Link href="#repositories">Repositorios</Link>       
+        <Link href="#contact">Contacto</Link>
       </Container>
     </>
   );
 };
 
 export default BurguerMenu;
+

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import RepositorieBox from './RepositorieBox'
 import { MainContainer } from '../common/MainCointainer';
-
+import { Title } from '../common/Title';
 
 
 
@@ -17,9 +17,10 @@ const skillsAdministradorDeCitas = ['React', 'CSS', 'JavaScript'];
 const Container = styled.section`
   display: flex;
   justify-content: center;
-padding-top: 50px;
+  flex-direction: column;
+
 background-color: #F8F9FA;
-padding-bottom: 40px;
+
 `
 
 const RepositoriesContainers = styled.div`
@@ -32,15 +33,7 @@ flex-direction: row;
  
  
 `
-const Title = styled.article`
-  display: flex;
-  justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 20px;
-  font-size: 2.5rem;
-  padding-top: 20px;
-  background-color: #F8F9FA;;
-`;
+
 
 
 
@@ -49,9 +42,11 @@ const Title = styled.article`
 export default function Portfolio() {
   return <>
 
-<Title>Portfolio</Title>
-    <Container>
+    <Container id='repositories'>
+   
+
    <MainContainer>
+   <Title>Portfolio</Title>
       <RepositoriesContainers>
 
         <RepositorieBox title="Administrador de Citas"
