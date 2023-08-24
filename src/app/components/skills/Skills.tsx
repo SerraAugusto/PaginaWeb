@@ -8,7 +8,7 @@ import { Title } from "../common/Title";
 const Container = styled.div`
 
   background-color: #F8F9FA;
-
+padding-bottom: 40px;
 
 `;
 
