@@ -115,7 +115,7 @@ export default function LandingSpace() {
 
   </SocialMediaContainer>
   <GmailContainer><GmailIconStyle><BiLogoGmail></BiLogoGmail></GmailIconStyle><p>Augusto.Serra.Luis@gmail.com</p></GmailContainer>
-<ResumeButton filename='\Augusto-Serra-CV-esp.pdf' buttonText='Descargar C.V.' ></ResumeButton>
+<ResumeButton filename='\Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton>
 </AboutAndSocial>
     </Container>
   </>
