@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const ButtonContainer = styled.button<{ visible: boolean }>`
+  margin-top: 10px;
   background-color: transparent;
   border: none;
   font-size: 30px;
@@ -10,7 +11,7 @@ const ButtonContainer = styled.button<{ visible: boolean }>`
   justify-content: center;
   height: 40px;
   width: 40px;
-  color: rgba(240, 228, 228, 0.7);
+  color: rgb(137, 223, 217);
   z-index: 10001;
   pointer-events: ${({ visible }) => (visible ? 'none' : 'auto')};
 `;

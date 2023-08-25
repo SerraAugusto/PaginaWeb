@@ -49,19 +49,14 @@ const ImageStyle = styled.img`
 
 
 const IconStyle = styled.a`
-
-margin: 10px;
-  
-font-size: 30px;
-  
+margin: 10px;  
+font-size: 30px;  
   transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
-color: #3a3a3a;
-  
+color: #3a3a3a; 
 
 &:hover {
     transform: scale(1.5);
-    
-    
+        
   }
 `;
 

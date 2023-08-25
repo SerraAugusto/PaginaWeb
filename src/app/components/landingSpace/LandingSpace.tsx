@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { BiLogoGmail } from "react-icons/bi";
-import ResumeButton from './ResumeButton';
+
 import Image from 'next/image';
 
 
@@ -13,7 +12,7 @@ const Container = styled.section`
 flex-direction: column;
  padding-top: 100px;
  background-color: white;
-
+padding-bottom: 40px;
 
 
 `
@@ -70,7 +69,7 @@ font-size: 30px;
 `
 const GmailContainer = styled.div`
 display: flex;
-flex-direction: column;
+
 justify-content: center;
 align-items: center;
 gap: 10px;
@@ -78,7 +77,7 @@ margin-top: 20px;
 `
 
 const IconStyle = styled.a`
-
+color:#303030 ;
 margin: 10px;
   
 font-size: 30px;
@@ -114,8 +113,8 @@ export default function LandingSpace() {
 
 
   </SocialMediaContainer>
-  <GmailContainer><GmailIconStyle><BiLogoGmail></BiLogoGmail></GmailIconStyle><p>Augusto.Serra.Luis@gmail.com</p></GmailContainer>
-<ResumeButton filename='\Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton>
+
+
 </AboutAndSocial>
     </Container>
   </>
