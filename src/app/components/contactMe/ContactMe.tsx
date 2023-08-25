@@ -117,7 +117,7 @@ export default  function ContactMe ( ) {
         <input type="text" name="user_name" />
         <h3>Email</h3>
         <input type="email" name="user_email" />
-        <h3>Mensage</h3>
+        <h3>Mensaje</h3>
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>

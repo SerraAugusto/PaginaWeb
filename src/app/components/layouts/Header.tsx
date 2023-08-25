@@ -79,7 +79,7 @@ export default function Header() {
         <NameLogo href='#Home'>Augusto</NameLogo>
         <ResumeButton filename='\Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton></LeftSide>
             <UlListContainer className='hide-Mobile'>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Habilidades</a></li></motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div> 
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>              
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div> 

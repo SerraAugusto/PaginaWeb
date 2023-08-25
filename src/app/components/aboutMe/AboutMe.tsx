@@ -71,7 +71,7 @@ export default function AboutMe() {
             urlName='https://www.digitalhouse.com/ar'
             subName='Programador Full Stack'
             subNameUrl='https://www.digitalhouse.com/ar/productos/programacion/programacion-web-full-stack'
-            date='nov. 2021 - jul. 2022'
+            date='11/2021 - 07/2022'
             skills={['React', 'CSS', 'JavaScript', 'Node.js', 'MySQL', 'APIs', 'Postman', 'Express', 'Sequelize']}
           />
           <InformationItem
@@ -89,7 +89,7 @@ export default function AboutMe() {
           <InformationItem
             name='Freelancer'           
             subName='Frontend Web Developer'            
-            date='feb. 2021 - now'
+            date='02/2021 - now'
             skills={['React', 'CSS', 'JavaScript', 'Node.js', 'MySQL', 'APIs','TypeScript', 'Next.js', 'Styled Components']}
 
           />

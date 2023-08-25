@@ -86,7 +86,7 @@ const BurguerMenu: React.FC = () => {
       </ButtonContainer>
       <Overlay visible={isContainerVisible} />
       <Container visible={isContainerVisible} ref={containerRef}>      
-       <Link href="#skills">Habilidades</Link>
+       <Link href="#skills">Skills</Link>
         <Link href="#about-me">Sobre mi</Link>
         <Link href="#repositories">Repositorios</Link>       
         <Link href="#contact">Contacto</Link>
