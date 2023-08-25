@@ -56,8 +56,10 @@ width: 100%;
       }
     }
 
-    label {
+    h3 {
       margin-top: 1rem;
+
+
     }
 
     input[type="submit"] {
@@ -111,11 +113,11 @@ export default  function ContactMe ( ) {
       <ContainerForm>
     <StyledContactForm>
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+        <h3>Nombre</h3>
         <input type="text" name="user_name" />
-        <label>Email</label>
+        <h3>Email</h3>
         <input type="email" name="user_email" />
-        <label>Message</label>
+        <h3>Mensage</h3>
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>

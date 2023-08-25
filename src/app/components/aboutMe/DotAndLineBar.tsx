@@ -8,7 +8,7 @@ const DotStyle = styled.div`
   justify-content: center;
   width: 27px;
   height: 27px;
-  background-color: #00aeff;
+  background-color: #77c2db;
   border-radius: 50%;
 
 `

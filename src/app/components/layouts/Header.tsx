@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components'
 import BurguerMenu from '../common/BurguerMenu';
 import { motion } from "framer-motion";

@@ -31,7 +31,7 @@ const ShadowBorder = styled.div`
   clip-path: circle(40%);
   object-fit: cover;
   width: 340px;
-  background-color: #00aeff;
+  background-color: #77c2db;
 justify-content: center;
   `
 
