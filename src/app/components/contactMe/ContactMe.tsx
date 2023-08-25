@@ -63,7 +63,7 @@ width: 100%;
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: rgb(248, 164, 138);
+      background: rgb(137, 223, 217);
       color: white;
       border: none;
       transition: 0.3s;
