@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import BurguerMenu from '../common/BurguerMenu';
 import { motion } from "framer-motion";
 import ResumeButton from '../common/ResumeButton';
+import { ThemeSwitcher } from '../themePage/ThemeSwitcher';
 
 
 
 
 
-
-const  Container = styled.nav`
+const Container = styled.nav`
 display: flex;
 align-items: center;
 height: 100px;
@@ -42,10 +42,18 @@ gap: 20px;
 const UlListContainer = styled.ul`
  list-style-type: none;
  display: flex;
-
+ margin-bottom: -4px;
 gap: 30px;
-justify-content: center;
 
+@media (min-width: 769px) {
+ 
+}
+justify-content: center;
+@media (max-width: 768px) {
+ justify-content: end;
+ flex: 1;
+ padding-right: 10px;
+}
 `
 
 
@@ -71,27 +79,30 @@ color: #3a3a3a;
 
 
 export default function Header() {
-  
-    return <>
-       
-        <Container>
-            <LeftSide>
+
+  return <>
+
+    <Container>
+      <LeftSide>
         <NameLogo href='#Home'>Augusto</NameLogo>
-        <ResumeButton filename='\Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton></LeftSide>
-            <UlListContainer className='hide-Mobile'>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div> 
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>              
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div> 
-            </UlListContainer>
-     
-           <BurguerMenu ></BurguerMenu>
-           
-        </Container>
+        <ResumeButton filename='\Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton>
+      </LeftSide>
+      <UlListContainer className='hide-Mobile' >
+      
+        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
+        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div>
+        <motion.div className='hide-Mobile'whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>
+        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div>
+       
+      </UlListContainer>
+      
+      <BurguerMenu ></BurguerMenu>
+
+    </Container>
 
 
 
 
-    </>
+  </>
 }
 
