@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styled from "styled-components";
-import {  BsFillMoonFill, BsFillSunFill } from "react-icons/Bs";
+import {  BsFillMoonFill,  } from "react-icons/Bs";
 
 const ThemeButton = styled.button`
 border-style: none;
