@@ -89,10 +89,10 @@ export default function Header() {
       </LeftSide>
       <UlListContainer className='hide-Mobile' >
       
-        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
-        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div>
-        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>
-        <motion.div className='hide-Mobile' whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div>
+        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
+        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div>
+        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>
+        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div>
        
       </UlListContainer>
       
