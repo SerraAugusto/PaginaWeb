@@ -53,7 +53,9 @@ justify-content: center;
  justify-content: end;
  flex: 1;
  padding-right: 10px;
+display: none;
 }
+
 `
 
 
