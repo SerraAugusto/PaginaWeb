@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import BurguerMenu from '../common/BurguerMenu';
 import { motion } from "framer-motion";
 import ResumeButton from '../common/ResumeButton';
-import { ThemeSwitcher } from '../themePage/ThemeSwitcher';
+
 
 
 
