@@ -29,7 +29,7 @@ const IconSize = styled.div`
 `;
 const NameIcon = styled.span`
   display: flex;
-
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
 `;
 
