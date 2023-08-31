@@ -7,7 +7,7 @@ import ResumeButton from '../common/ResumeButton';
 
 
 
-
+/*<ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton> */
 
 const Container = styled.nav`
 display: flex;
