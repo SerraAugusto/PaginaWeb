@@ -87,7 +87,7 @@ export default function Header() {
     <Container>
       <LeftSide>
         <NameLogo href='#Home'>Augusto</NameLogo>
-        <ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton>
+    
       </LeftSide>
       <UlListContainer className='hide-Mobile' >
       
