@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/contactMe/ContactMe.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/contactMe/ContactMe.tsx", "src/app/components/themePage/ThemeSwitcherButton.tsx"],
   "exclude": ["node_modules"]
 }

@@ -5,7 +5,7 @@ import LandingSpace from '@/app/components/landingSpace/LandingSpace'
 import AboutMe from '@/app/components/aboutMe/AboutMe'
 import Skills from '@/app/components/skills/Skills'
 import Portfolios from '@/app/components/portfolios/Portfolio'
-import  ContactMe  from '@/app/components/contactMe/ContactMe';
+import ContactMe  from '@/app/components/contactMe/ContactMe';
 
 
 
@@ -14,7 +14,7 @@ import  ContactMe  from '@/app/components/contactMe/ContactMe';
 
 export default function index() {
   return ( <>
-   
+ 
      <Header></Header>
   <LandingSpace></LandingSpace>
  
@@ -28,6 +28,8 @@ export default function index() {
       
 <Portfolios></Portfolios>
 <ContactMe></ContactMe>
+
+
   </>
     
   )

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 import BurguerMenu from '../common/BurguerMenu';
-import { motion } from "framer-motion";
 import ResumeButton from '../common/ResumeButton';
-
+// import ThemeSwitcherButton from '../themePage/ThemeSwitcherButton';
+import MoonIcon from '../themePage/MoonIcon';
+import SunIcon from '../themePage/SunIcon';
 
 
 
@@ -27,6 +28,7 @@ justify-content: space-between;
 const LeftSide = styled.div`
 display: flex;
 align-items: center;
+gap: 5px;
 @media (min-width: 769px){
 justify-content: flex-end;
 };
@@ -35,14 +37,14 @@ justify-self: flex-start;
 padding-left: 20px;
 };
 
-gap: 20px;
+
 
 `
 
 const UlListContainer = styled.ul`
  list-style-type: none;
  display: flex;
- margin-bottom: -4px;
+
 gap: 30px;
 
 @media (min-width: 769px) {
@@ -75,7 +77,17 @@ color: #3a3a3a;
   }
 `;
 
+const SectionAnimation = styled.a`
+margin: 10px;  
+font-size: 20px;  
+  transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
+color: #3a3a3a; 
 
+&:hover {
+    transform: scale(1.5);
+        
+  }
+`;
 
 
 
@@ -86,15 +98,15 @@ export default function Header() {
 
     <Container>
       <LeftSide>
-        <NameLogo href='#Home'>Augusto</NameLogo>
-    
+        <NameLogo href='#Home'>Augusto</NameLogo>{/*<SunIcon></SunIcon>
+     <ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
       </LeftSide>
       <UlListContainer className='hide-Mobile' >
       
-        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#skills">Skills</a></li></motion.div>
-        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#about-me">Sobre mi</a></li></motion.div>
-        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#repositories">Repositorios</a></li></motion.div>
-        <motion.div  whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}><li><a href="#contact">Contacto</a></li></motion.div>
+        <SectionAnimation href="#skills"><li>Skills</li></SectionAnimation>
+        <SectionAnimation href="#about-me"><li>Sobre mi</li></SectionAnimation>
+        <SectionAnimation href="#repositories"><li>Repositorios</li></SectionAnimation>
+        <SectionAnimation href="#contact"><li>Contacto</li></SectionAnimation>
        
       </UlListContainer>
       
