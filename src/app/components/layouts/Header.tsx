@@ -65,7 +65,7 @@ display: none;
 
 const NameLogo = styled.a`
 
-
+align-self: baseline;
 font-size: 2em;
 
 margin: 10px;  
@@ -85,6 +85,7 @@ font-size: 20px;
   transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
 color: #3a3a3a; 
 align-self: center;
+
 &:hover {
     transform: scale(1.5);
         
@@ -94,6 +95,7 @@ align-self: center;
 const ButtonStyle = styled.button`
 display: flex;
 font-size: 25px;
+font-family: emoji;
 justify-content: center;
 align-items: center;
 align-self: center;
