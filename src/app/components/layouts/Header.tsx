@@ -13,6 +13,7 @@ import SunIcon from '../themePage/SunIcon';
 const Container = styled.nav`
 display: flex;
 align-items: center;
+align-content: center;
 height: 100px;
 background-color: #F8F9FA;
 position: fixed;
@@ -28,6 +29,7 @@ justify-content: space-between;
 const LeftSide = styled.div`
 display: flex;
 align-items: center;
+height:50px;
 gap: 5px;
 @media (min-width: 769px){
 justify-content: flex-end;
@@ -41,10 +43,10 @@ padding-left: 20px;
 
 `
 
-const UlListContainer = styled.ul`
+const ListContainer = styled.div`
  list-style-type: none;
  display: flex;
-
+ height:50px;
 gap: 30px;
 
 @media (min-width: 769px) {
@@ -82,13 +84,38 @@ margin: 10px;
 font-size: 20px;  
   transition: transform 0.3s cubic-bezier(.34,1.56,.98,1.01) ;
 color: #3a3a3a; 
-
+align-self: center;
 &:hover {
     transform: scale(1.5);
         
   }
 `;
 
+const ButtonStyle = styled.button`
+display: flex;
+font-size: 25px;
+justify-content: center;
+align-items: center;
+align-self: center;
+background-color: rgb(137, 223, 217);
+border-style: none;
+padding: 5px;
+border-radius: 4px; 
+transition: 0.4s;
+margin-top: 10px;
+width: 80px;
+height: 30px;
+gap: 10px;
+    :hover{
+box-shadow: 1px 1px 5px #686868;
+transform: scale(1.07);
+filter: none;
+
+
+cursor: pointer;
+} 
+
+`
 
 
 
@@ -98,17 +125,20 @@ export default function Header() {
 
     <Container>
       <LeftSide>
-        <NameLogo href='#Home'>Augusto</NameLogo>{/*<SunIcon></SunIcon>
+        <NameLogo href='#Home'>Augusto</NameLogo>
+      <ButtonStyle> <a href="/Augusto-Serra-CV-Esp.pdf" target='_blank' download='Augusto-Serra-CV-Esp.pdf'>C.V.</a></ButtonStyle> 
+        {/*<SunIcon></SunIcon>
+         
      <ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
       </LeftSide>
-      <UlListContainer className='hide-Mobile' >
+      <ListContainer className='hide-Mobile' >
       
         <SectionAnimation href="#skills"><li>Skills</li></SectionAnimation>
         <SectionAnimation href="#about-me"><li>Sobre mi</li></SectionAnimation>
         <SectionAnimation href="#repositories"><li>Repositorios</li></SectionAnimation>
         <SectionAnimation href="#contact"><li>Contacto</li></SectionAnimation>
        
-      </UlListContainer>
+      </ListContainer>
       
       <BurguerMenu ></BurguerMenu>
 
