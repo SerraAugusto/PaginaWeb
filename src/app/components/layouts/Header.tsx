@@ -128,7 +128,7 @@ export default function Header() {
     <Container>
       <LeftSide>
         <NameLogo href='#Home'>Augusto</NameLogo>
-      <ButtonStyle> <a href="/Augusto-Serra-CV-Esp.pdf" target='_blank' download='Augusto-Serra-CV-Esp.pdf'>C.V.</a></ButtonStyle> 
+      {/* <ButtonStyle> <a href="/Augusto-Serra-CV-Esp.pdf" target='_blank' download='Augusto-Serra-CV-Esp.pdf'>C.V.</a></ButtonStyle>  */}
         {/*<SunIcon></SunIcon>
          
      <ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
