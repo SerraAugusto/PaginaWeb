@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-
 import Image from 'next/image';
+
 
 
 
@@ -56,9 +56,11 @@ const TitleProfile = styled.div`
 h1{
   margin-bottom: 30px;
   font-size: 40px;
+  
 }
 p{
   font-size: 20px;
+  text-align: center;
 }
 display: flex;
 flex-direction: column;
@@ -101,6 +103,7 @@ export default function LandingSpace() {
 <AboutAndSocial>
 
   <TitleProfile>
+ 
     <h1>Augusto Serra</h1>
     <p>Frontend Developer. Buscando mejorar constantemente para brindar el mejor servicio</p>
   </TitleProfile>
