@@ -18,7 +18,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+padding-bottom: 30px;
 background-color: #F8F9FA;
 
 `

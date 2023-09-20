@@ -7,7 +7,7 @@ import { Title } from '../common/Title';
 const Container = styled.div`
 
 background-color:white;
-
+padding-bottom: 30px;
 `
 
 
