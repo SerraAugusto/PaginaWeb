@@ -128,7 +128,7 @@ export default function Header() {
     <Container>
       <LeftSide>
         <NameLogo href='#Home'>Augusto</NameLogo>
-       <ButtonStyle> <a href="https://drive.google.com/file/d/1ObK1j0t1klr4vX_FcslESXiNsWWWidDx/view?usp=drive_link" target='_blank' download='Augusto-Serra-CV-Esp.pdf'>C.V.</a></ButtonStyle>  
+        <ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton>  
         {/*<SunIcon></SunIcon>
          
      <ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
