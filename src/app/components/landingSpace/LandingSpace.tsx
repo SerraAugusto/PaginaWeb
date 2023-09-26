@@ -56,11 +56,9 @@ const TitleProfile = styled.div`
 h1{
   margin-bottom: 30px;
   font-size: 40px;
-  
 }
 p{
   font-size: 20px;
-  text-align: center;
 }
 display: flex;
 flex-direction: column;
