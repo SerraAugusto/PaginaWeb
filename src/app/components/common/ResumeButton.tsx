@@ -34,7 +34,7 @@ export default function ResumeButton ({ filename, buttonText}: Props)  {
   const handleDownload = () => {
   
     const link = document.createElement('a');
-    link.href = `${filename}`; 
+    link.href = `/${filename}`; 
     link.download = filename;
     document.body.appendChild(link);
     link.click();
