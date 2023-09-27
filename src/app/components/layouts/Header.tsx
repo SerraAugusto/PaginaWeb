@@ -128,9 +128,9 @@ export default function Header() {
     <Container>
       <LeftSide>
         <NameLogo href='#Home'>Augusto</NameLogo>
-        {/* <ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton> */}
+        <ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton> 
         {/*<SunIcon></SunIcon><ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
-        <ButtonStyle  href="https://drive.google.com/file/d/1ObK1j0t1klr4vX_FcslESXiNsWWWidDx/view?usp=drive_link" target="_blank">C.V</ButtonStyle>
+        {/*<ButtonStyle  href="https://drive.google.com/file/d/1ObK1j0t1klr4vX_FcslESXiNsWWWidDx/view?usp=drive_link" target="_blank">C.V</ButtonStyle>*/}
       </LeftSide>
       <ListContainer className='hide-Mobile' >
       
