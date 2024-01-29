@@ -130,7 +130,7 @@ export default function Header() {
         <NameLogo href='#Home'>Augusto</NameLogo>
         {/* <ResumeButton filename='/Augusto-Serra-CV-Esp.pdf' buttonText='C.V.' ></ResumeButton> */}
         {/*<SunIcon></SunIcon><ThemeSwitcherButton></ThemeSwitcherButton><MoonIcon></MoonIcon> */}
-        <ButtonStyle  href="https://drive.google.com/file/d/1ObK1j0t1klr4vX_FcslESXiNsWWWidDx/view?usp=drive_link" target="_blank">C.V</ButtonStyle>
+        <ButtonStyle  href="https://drive.google.com/file/d/1Z4n1vsHqi1XoSwWTN5mt1DuTAHYKv0sG/view?usp=sharing" target="_blank">C.V</ButtonStyle>
       </LeftSide>
       <ListContainer className='hide-Mobile' >
       
@@ -142,6 +142,7 @@ export default function Header() {
       </ListContainer>
       
       <BurguerMenu ></BurguerMenu>
+
 
     </Container>
 
